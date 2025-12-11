@@ -1,4 +1,5 @@
-# 🎉 Sina API Free | مجموعه وب‌سرویس‌های رایگان، سریع و بدون نیاز به توکن
+# 🎉 Sina API Free
+**مجموعه وب‌سرویس‌های رایگان، سریع و بدون نیاز به توکن**
 
 <div align="center"><img src="https://img.icons8.com/external-wanicon-lineal-wanicon/200/external-api-big-data-wanicon-lineal-wanicon.png" width="160"/>
 
