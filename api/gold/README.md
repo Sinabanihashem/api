@@ -12,24 +12,28 @@ https://gold.api-sina-free.workers.dev/gold
 
 ---
 
-## 🔹 خروجی‌ها
+## 📦 خروجی وب‌سرویس
 
-| پارامتر | نوع | توضیح |
-|--------|------|--------|
+| کلید | نوع | توضیح |
+|-----|-----|--------|
 | gold_18_ayar | number | قیمت هر گرم طلای ۱۸ عیار |
 | gold_24_ayar | number | قیمت هر گرم طلای ۲۴ عیار |
-| gold_second_hand | number | قیمت طلای دست دوم |
+| gold_second_hand | number | طلای دست دوم |
 | mesghal_tala | number | قیمت هر مثقال طلا |
-| abshode_naghd | number | قیمت آبشده نقدی |
-| abshode_moamelati | number | قیمت آبشده معاملاتی |
+| abshode_naghd | number | آبشده نقدی |
+| abshode_moamelati | number | آبشده معاملاتی |
 | sekke_emami | number | سکه امامی |
 | sekke_bahar_azadi | number | سکه بهار آزادی |
 | nim_sekke | number | نیم‌سکه |
 | rob_sekke | number | ربع‌سکه |
 | sekke_gerami | number | سکه گرمی |
-| habab_* | number | حباب سکه‌ها |
-| updated_at | string | زمان به‌روزرسانی |
-| source | string | منبع دریافت قیمت |
+| habab_emami | number | حباب سکه امامی |
+| habab_bahar | number | حباب بهار آزادی |
+| habab_nim | number | حباب نیم سکه |
+| habab_rob | number | حباب ربع سکه |
+| habab_gerami | number | حباب سکه گرمی |
+| updated_at | string | زمان بروزرسانی |
+| source | string | منبع نرخ‌ها |
 
 ---
 
