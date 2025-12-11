@@ -1,6 +1,7 @@
 # 🎉 Sina API Free | مجموعه وب‌سرویس‌های رایگان، سریع و بدون نیاز به توکن
 
-<div align="center"><img src="https://img.icons8.com/external-wanicon-lineal-wanicon/200/external-api-big-data-wanicon-lineal-wanicon.png" width="160"/>🚀 Sina API Free
+<div align="center"><img src="https://img.icons8.com/external-wanicon-lineal-wanicon/200/external-api-big-data-wanicon-lineal-wanicon.png" width="160"/>
+    🚀 Sina API Free
 
 **مجموعه وب‌سرویس‌های رایگان، بدون توکن، سریع و قابل استفاده برای همه**
 
@@ -98,9 +99,9 @@ Sina API Free یک پلتفرم کاملاً رایگان، بدون توکن و
 
 # 🧑‍💻 درباره توسعه‌دهنده
 
-<div align="center"><img src="https://img.icons8.com/color/96/programming.png" width="90"/>سینا
+<div align="center"><img src="https://img.icons8.com/color/96/programming.png" width="90"/>
 
-**سازنده و توسعه‌دهنده کامل پلتفرم Sina API Free
+**سینا سازنده و توسعه‌دهنده کامل پلتفرم Sina API Free
 علاقه‌مند به:**
 
 ● توسعه وب‌سرویس
