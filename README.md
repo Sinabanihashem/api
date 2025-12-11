@@ -174,9 +174,12 @@ Sina API Free یک پلتفرم کاملاً رایگان، بدون توکن و
 <div align="center"><img src="https://img.icons8.com/color/96/communication.png" width="80"/>
     
 📧 ایمیل: xxxxsinaxxxx.ir@gmail.com
-📢 کانال: Sinabani_api
-💬 آی‌دی: Sinabanis
-🐙 گیت‌هاب: Sinabanihashem
+
+📢 کانال: Sinabani_api@
+
+💬 آیدی: Sinabanis@
+
+🐙 گیت‌هاب: https://github.com/Sinabanihashem
 
 </div>
 
