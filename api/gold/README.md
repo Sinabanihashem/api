@@ -191,7 +191,7 @@ mir sina banihashem
 
 ---
 
-SinaGoldAPI version : 2.1.2
+# 👑 SinaGoldAPI version : 2.1.2
 
 The **SinaGoldAPI** web service is a fast and lightweight API for retrieving the real-time prices of **gold and coins** from one of the most reliable Iranian pricing sources 🇮🇷💰  
 With just a simple GET request, you can instantly fetch all updated prices — **no API key required** 🚀
@@ -371,7 +371,7 @@ bot.run()
 
 ---
 
-👤 Developer
+# 👤 Developer
 
 mir sina banihashem
 
