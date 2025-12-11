@@ -55,7 +55,6 @@ Sina API Free یک پلتفرم کاملاً رایگان، بدون توکن و
 <div align="center">
 
 <img src="https://img.icons8.com/color/96/000000/api.png" width="90"/>
-<img src="https://img.icons8.com/color/96/000000/cloud.png" width="90"/>
 <img src="https://img.icons8.com/color/96/000000/rocket.png" width="90"/>
 <img src="https://img.icons8.com/color/96/000000/source-code.png" width="90"/>
 
