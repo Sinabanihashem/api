@@ -221,8 +221,12 @@ Sina API Free یک پلتفرم کاملاً رایگان، بدون توکن و
 
 # 🎉 پایان
 
-<div align="center">از استفاده از Sina API Free ممنونیم ❤️
+<div align="center">
 
-اگر این مخزن برایتان مفید بود، ⭐ به آن بدهید!
+ممنونم که از Sina API Free استفاده میکنید❤️
+
+خواهش مندیم که برای حمایت از ما یک ⭐ به مخزن بدهید.
 
 <img src="https://img.icons8.com/color/96/star.png" width="80"/></div>
+
+---
