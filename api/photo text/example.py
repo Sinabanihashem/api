@@ -6,4 +6,4 @@ response = requests.get(url)
 with open("hello.png", "wb") as f:
     f.write(response.content)
 
-print("🖼 تصویر ذخیره شد")
+print("🖼 Image saved")
