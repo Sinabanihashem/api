@@ -1,4 +1,4 @@
-# 🏀 SinaSportsNewsAPI version : 1.0.0
+# 🏀SinaSportsNewsAPI version : 1.0.0
 
 وب‌سرویس **SinaSportsNewsAPI** یک API سریع و سبک برای دریافت **آخرین اخبار ورزشی** از منابع معتبر است 🔥  
 این سرویس اطلاعات کامل هر خبر شامل تیتر، زیرتیتر، متن و رسانه‌های مرتبط (عکس و ویدیو) را ارائه می‌دهد  
@@ -158,7 +158,7 @@ mir sina banihashem
 
 ---
 
-# 🏀 SinaSportsNewsAPI version : 1.0.0
+# 🏀SinaSportsNewsAPI version : 1.0.0
 
 **SinaSportsNewsAPI** is a fast and lightweight API for fetching the **latest sports news** from reliable sources 🔥  
 This service provides full details for each news item, including headline, subtitle, text, and related media (images & videos)  
