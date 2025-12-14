@@ -172,11 +172,11 @@ https://photo-text.api-sina-free.workers.dev/{text}
 
 ## 🧪 Sample Requests
 
-**Simple Example**
+### Simple Example
 `GET` https://photo-text.api-sina-free.workers.dev/Hello
 
-**Persian Example**
-GET https://photo-text.api-sina-free.workers.dev/سلام
+### Persian Example
+`GET` https://photo-text.api-sina-free.workers.dev/سلام
 
 ---
 
