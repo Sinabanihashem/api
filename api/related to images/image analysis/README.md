@@ -10,11 +10,15 @@ SinaImageOCR یک سرویس سریع و سبک برای استخراج متن �
 
 **ارسال فایل تصویر (POST)**
 
-https://image-analysis.api-sina-free.workers.dev/
+```http
+POST https://image-analysis.api-sina-free.workers.dev/
+```
 
 **ارسال لینک مستقیم تصویر (GET)**
 
-https://image-analysis.api-sina-free.workers.dev/?url=`<IMAGE_URL>`
+```http
+GET https://image-analysis.api-sina-free.workers.dev/?url=<IMAGE_URL>
+```
 
 ---
 
@@ -153,11 +157,15 @@ This API requires no access key and no complicated setup.
 
 **Upload image file (POST)**
 
-https://image-analysis.api-sina-free.workers.dev/
+```http
+POST https://image-analysis.api-sina-free.workers.dev/
+```
 
 **Direct image URL (GET)**
 
-https://image-analysis.api-sina-free.workers.dev/?url=`<IMAGE_URL>`
+```http
+GET https://image-analysis.api-sina-free.workers.dev/?url=<IMAGE_URL>
+```
 
 ---
 
