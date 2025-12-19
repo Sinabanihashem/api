@@ -26,7 +26,9 @@ https://dollar.api-sina-free.workers.dev/dollar
 |-----------|--------|
 | GET | بدون نیاز به پارامتر |
 
+```http
 GET https://dollar.api-sina-free.workers.dev/dollar
+```
 
 ---
 
@@ -179,7 +181,9 @@ https://dollar.api-sina-free.workers.dev/dollar
 |--------|-------------|
 | GET | No parameters required |
 
+```http
 GET https://dollar.api-sina-free.workers.dev/dollar
+```
 
 ---
 
