@@ -117,21 +117,19 @@ GET https://currency.api-sina-free.workers.dev/?crypto=btc
 
 ---
 
-⚠️ مدیریت خطاها
+## ⚠️ مدیریت خطاها
 
-وضعیت	پیام
+| وضعیت | پیام |
+|------|------|
+| `400` | پارامتر `crypto` ارسال نشده |
+| `404` | ارز موردنظر پیدا نشد |
+| `500` | خطا در ارتباط با منبع |
 
-400	پارامتر crypto ارسال نشده
-404	ارز موردنظر پیدا نشد
-500	خطا در ارتباط با Excoino
+### 🧾 نمونه خطا
 
-
-**نمونه خط**ا
-
-```http
+```json
 {
   "error": "ارز مورد نظر پیدا نشد"
-}
 ```
 
 ---
@@ -434,16 +432,17 @@ GET https://currency.api-sina-free.workers.dev/?crypto=btc
 
 ---
 
-⚠️ Error Handling
+---
 
-HTTP Status	Description
+## ⚠️ Error Handling
 
-400	Missing crypto parameter
-404	Cryptocurrency not found
-500	Error fetching data from Excoino
+| Status | Message |
+|-------|---------|
+| `400` | `crypto` parameter is missing |
+| `404` | Cryptocurrency not found |
+| `500` | Error communicating |
 
-
-**Error Response Example**
+### 🧾 Error Example
 
 ```json
 {
