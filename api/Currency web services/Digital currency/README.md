@@ -77,7 +77,7 @@ GET /logo/{SYMBOL}
   "activ": 1,
   "time": "string"
 }
-
+```
 
 ---
 
