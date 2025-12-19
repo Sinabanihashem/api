@@ -10,15 +10,11 @@ SinaImageOCR یک سرویس سریع و سبک برای استخراج متن �
 
 **ارسال فایل تصویر (POST)**
 
-```http
 https://image-analysis.api-sina-free.workers.dev/
-```
 
 **ارسال لینک مستقیم تصویر (GET)**
 
-```http
-https://image-analysis.api-sina-free.workers.dev/?url=<IMAGE_URL>
-```
+https://image-analysis.api-sina-free.workers.dev/?url=`<IMAGE_URL>`
 
 ---
 
@@ -67,7 +63,9 @@ curl -X POST -F "image=@test.png" https://image-analysis.api-sina-free.workers.d
 
 GET با لینک تصویر
 
+```http
 https://image-analysis.api-sina-free.workers.dev/?url=https://example.com/test.png
+```
 
 ---
 
