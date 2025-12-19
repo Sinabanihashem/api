@@ -153,15 +153,11 @@ This API requires no access key and no complicated setup.
 
 **Upload image file (POST)**
 
-```http
 https://image-analysis.api-sina-free.workers.dev/
-```
 
 **Direct image URL (GET)**
 
-```http
-https://image-analysis.api-sina-free.workers.dev/?url=<IMAGE_URL>
-```
+https://image-analysis.api-sina-free.workers.dev/?url=`<IMAGE_URL>`
 
 ---
 
@@ -208,7 +204,9 @@ https://image-analysis.api-sina-free.workers.dev/?url=<IMAGE_URL>
 
 **GET with image URL**
 
-```https://image-analysis.api-sina-free.workers.dev/?url=https://example.com/test.png```
+```http
+GET https://image-analysis.api-sina-free.workers.dev/?url=https://example.com/test.png
+```
 
 
 ---
