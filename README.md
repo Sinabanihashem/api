@@ -1,3 +1,14 @@
+<!-- SEO Description (English) -->
+**Sina API Free**: A free, fast, and token-less collection of web APIs including AI, image processing, search, and utility tools, designed for Persian and international developers.
+
+**Key Features:**  
+- Instant access without authentication  
+- High speed and reliability via Cloudflare  
+- Perfect for web apps, bots, and projects  
+- Full documentation with ready-to-use examples for every API
+
+---
+
 # 🎉 Sina API Free
 **مجموعه وب‌سرویس‌های رایگان، سریع و بدون نیاز به توکن**
 
