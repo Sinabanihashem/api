@@ -8,7 +8,7 @@
 
 ## 🌐 آدرس وب‌سرویس
 
-https://sports.api-sina-free.workers.dev/sports
+https://sports.api-sina-free.workers.dev/news
 
 ---
 
@@ -54,7 +54,9 @@ https://sports.api-sina-free.workers.dev/sports
 
 ## 🧪 نمونه درخواست
 
-`GET` https://sports.api-sina-free.workers.dev/sports
+```http
+GET https://sports.api-sina-free.workers.dev/news
+```
 
 ---
 
@@ -88,7 +90,7 @@ https://sports.api-sina-free.workers.dev/sports
 ```py
 import requests
 
-res = requests.get("https://sports.api-sina-free.workers.dev/sports")
+res = requests.get("https://sports.api-sina-free.workers.dev/news")
 data = res.json()
 
 for item in data["data"]:
@@ -108,7 +110,7 @@ import requests
 
 bot = Client(name="sina_sports_news_bot")
 
-API_URL = "https://sports.api-sina-free.workers.dev/sports"
+API_URL = "https://sports.api-sina-free.workers.dev/news"
 
 def get_sports_news():
     try:
@@ -152,7 +154,7 @@ mir sina banihashem
 
 📍 Hosted on: Cloudflare Workers                    
 🗳 Rubika: https://rubika.ir/Sinabani_api                  
-🔗 Endpoint: https://sports.api-sina-free.workers.dev/sports
+🔗 Endpoint: https://sports.api-sina-free.workers.dev/news
 
 ---
 
@@ -168,7 +170,7 @@ This service provides full details for each news item, including headline, subti
 
 ## 🌐 API Endpoint
 
-https://sports.api-sina-free.workers.dev/sports
+https://sports.api-sina-free.workers.dev/news
 
 ---
 
@@ -248,7 +250,7 @@ Each request returns the complete list of sports news 📊
 ```py
 import requests
 
-res = requests.get("https://sports.api-sina-free.workers.dev/sports")
+res = requests.get("https://sports.api-sina-free.workers.dev/news")
 data = res.json()
 
 for item in data["data"]:
@@ -269,7 +271,7 @@ import requests
 
 bot = Client(name="sina_sports_news_bot")
 
-API_URL = "https://sports.api-sina-free.workers.dev/sports"
+API_URL = "https://sports.api-sina-free.workers.dev/news"
 
 def get_sports_news():
     try:
@@ -313,4 +315,4 @@ mir sina banihashem
 
 📍 Hosted on: Cloudflare Workers
 🗳 Rubika: https://rubika.ir/Sinabani_api
-🔗 Endpoint: https://sports.api-sina-free.workers.dev/sports
+🔗 Endpoint: https://sports.api-sina-free.workers.dev/news
