@@ -121,7 +121,108 @@ GET https://football.api-sina-free.workers.dev/news
 
 ---
 
-⚙️ ویژگی‌ها
+# 💻 استفاده کامل در Python
+
+```py
+import requests
+
+API = "https://football.api-sina-free.workers.dev/news"
+
+def get_football_news():
+    try:
+        res = requests.get(API, timeout=10)
+        return res.json()
+    except Exception as e:
+        return {
+            "ok": false,
+            "error": str(e)
+        }
+
+news_data = get_football_news()
+
+for news in news_data.get("data", []):
+    print(news["title"])
+```
+
+---
+
+# 💻 استفاده کامل در Node.js
+
+```js
+const API = "https://football.api-sina-free.workers.dev/news";
+
+async function getFootballNews() {
+  try {
+    const res = await fetch(API);
+    const data = await res.json();
+    console.log(data.data);
+  } catch (err) {
+    console.error("Error fetching news:", err);
+  }
+}
+
+getFootballNews();
+```
+
+---
+
+# 🤖 استفاده در ربات (Rubika , py)
+
+```py
+import requests
+from rubpy import Client, filters
+
+API = "https://football.api-sina-free.workers.dev/news"
+
+bot = Client(name="football_news_bot")
+
+@bot.on_message_updates(filters.text)
+async def handler(message):
+    text = message.text.strip().lower()
+
+    # trigger command
+    if text not in ["اخبار فوتبال", "/news", "football"]:
+        return
+
+    try:
+        res = requests.get(API, timeout=10)
+        data = res.json()
+    except Exception as e:
+        return await message.reply(f"❌ خطا در ارتباط با سرور:\n{e}")
+
+    news_list = data.get("data", [])
+    if not news_list:
+        return await message.reply("❌ خبری دریافت نشد.")
+
+    news = news_list[0]
+
+    title = news.get("title", "-")
+    subtitle = news.get("subtitle", "-")
+    image = news.get("image", "")
+
+    text_reply = (
+        f"⚽ **{title}**\n\n"
+        f"📰 {subtitle}"
+    )
+
+    if image:
+        await message.reply_photo(
+            photo=image,
+            caption=text_reply,
+            parse_mode="markdown"
+        )
+    else:
+        await message.reply(
+            text_reply,
+            parse_mode="markdown"
+        )
+
+bot.run()
+```
+
+---
+
+# ⚙️ ویژگی‌ها
 
 ✅ بدون نیاز به API Key
 
@@ -138,7 +239,7 @@ GET https://football.api-sina-free.workers.dev/news
 
 ---
 
-🎯 موارد استفاده
+# 🎯 موارد استفاده
 
 ● ربات‌های خبری فوتبال
 
@@ -320,25 +421,58 @@ getNews();
 
 ---
 
-# 🤖 Use in Bots (Rubika)
+# 🤖 Use in Bots (Rubika , py)
 
 ```py
 import requests
+from rubpy import Client, filters
 
 API = "https://football.api-sina-free.workers.dev/news"
 
-res = requests.get(API, timeout=10)
-data = res.json()
+bot = Client(name="football_news_bot")
 
-news = data["data"][0]
+@bot.on_message_updates(filters.text)
+async def handler(message):
+    text = message.text.strip().lower()
 
-text = f"""
-⚽ {news['title']}
+    # trigger commands
+    if text not in ["football news", "/news", "news"]:
+        return
 
-📰 {news['subtitle']}
-"""
+    try:
+        res = requests.get(API, timeout=10)
+        data = res.json()
+    except Exception as e:
+        return await message.reply(f"❌ Server connection error:\n{e}")
 
-print(text)
+    news_list = data.get("data", [])
+    if not news_list:
+        return await message.reply("❌ No news found.")
+
+    news = news_list[0]
+
+    title = news.get("title", "-")
+    subtitle = news.get("subtitle", "-")
+    image = news.get("image", "")
+
+    reply_text = (
+        f"⚽ **{title}**\n\n"
+        f"📰 {subtitle}"
+    )
+
+    if image:
+        await message.reply_photo(
+            photo=image,
+            caption=reply_text,
+            parse_mode="markdown"
+        )
+    else:
+        await message.reply(
+            reply_text,
+            parse_mode="markdown"
+        )
+
+bot.run()
 ```
 
 ---
