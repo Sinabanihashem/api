@@ -153,10 +153,236 @@ GET https://football.api-sina-free.workers.dev/news
 
 ---
 
-👤 
+# 👤 Developer
 
-Mir Sina Banihashem
+### Mir Sina Banihashem
 
-📍 Hosted on: Cloudflare Workers‌ ‌ ‌ ‌ ‌ ‌‌ ‌ ‌ ‌‌ ‌ ‌ ‌ ‌ ‌‌ ‌ ‌‌ ‌ ‌ ‌
-🗳 Rubika: https://rubika.ir/Sinabani_api ‌ ‌‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌‌ ‌‌ ‌ ‌ ‌ ‌ ‌ 
-🔗 API Endpoint: https://football.api-sina-free.workers.dev/news‌ ‌ ‌‌ ‌ ‌ 
+📍 Hosted on: Cloudflare Workers‌
+🗳 Rubika: https://rubika.ir/Sinabani_api
+🔗 API Endpoint: https://football.api-sina-free.workers.dev/news‌
+
+---
+
+---
+
+# ⚽ Football News API
+### Version: Football API v1.0.0
+
+The **Football News API** is a fast, lightweight, and API-key-free web service for  
+📰 **fetching the latest football news**.
+
+This service collects the most recent football-related news from reliable Persian sports media sources and  
+returns a clean, structured **JSON** response.
+
+🔹 Hosted on **Cloudflare Workers**  
+🔹 Suitable for bots, websites, and mobile apps  
+🔹 Provides news title, subtitle, image, and unique ID  
+
+---
+
+## 🧠 API Architecture
+
+1️⃣ Client sends a request to the API endpoint  
+2️⃣ Worker fetches latest football news data  
+3️⃣ News items are parsed and normalized  
+4️⃣ Standard JSON response is returned  
+
+---
+
+## 🌐 Main API URL
+
+https://football.api-sina-free.workers.dev/news
+
+---
+
+## 🔗 Endpoint
+
+### 🔹 Get Latest Football News
+
+```http
+GET /news
+```
+
+> This endpoint does not require any query parameters.
+
+---
+
+## 📦 API Response Structure
+
+```json
+{
+  "channel": "@Sinabani_api",
+  "creator": "@Sinabanis",
+  "data": [
+    {
+      "id": "1573915",
+      "title": "News title",
+      "subtitle": "News subtitle or summary",
+      "image": "https://example.com/image.jpg"
+    }
+  ]
+}
+```
+
+---
+
+## 🧾 Response Fields Description
+
+| Field | Type | Description |
+|------|------|------------|
+| `channel` | `string` | API publisher channel |
+| `creator` | `string` | API developer |
+| `data` | `array` | List of football news items |
+| `id` | `string` | Unique news identifier |
+| `title` | `string` | News title |
+| `subtitle` | `string` | Short news summary |
+| `image` | `string` | News image URL (can be empty) |
+
+
+---
+
+# 🧪 Example Request
+
+```http
+GET https://football.api-sina-free.workers.dev/news
+```
+
+---
+
+# 🧾 Example Response
+
+```json
+{
+  "channel": "@Sinabani_api",
+  "creator": "@Sinabanis",
+  "data": [
+    {
+      "id": "1573915",
+      "title": "Tractor close to stealing Persepolis target",
+      "subtitle": "Reports indicate negotiations are underway in Dubai...",
+      "image": "https://www.example.com/news-image.jpg"
+    }
+  ]
+}
+```
+
+---
+
+# ⚠️ Error Handling
+
+| Status | Message |
+|--------|--------|
+| 448 | Error fetching football news source |
+| 500 | Internal server error |
+
+### 🧾 Example Error
+
+```json
+{
+  "ok": false,
+  "channel": "@Sinabani_api",
+  "creator": "@Sinabanis",
+  "data": "Failed to fetch football news."
+}
+```
+
+---
+
+# 💻 Python Example
+
+```py
+import requests
+
+API = "https://football.api-sina-free.workers.dev/news"
+
+res = requests.get(API, timeout=10)
+data = res.json()
+
+for news in data["data"]:
+    print(news["title"])
+```
+
+---
+
+# 💻 Node.js Example
+
+```js
+const API = "https://football.api-sina-free.workers.dev/news";
+
+async function getNews() {
+  const res = await fetch(API);
+  const data = await res.json();
+  console.log(data.data);
+}
+
+getNews();
+```
+
+---
+
+# 🤖 Use in Bots (Rubika)
+
+```py
+import requests
+
+API = "https://football.api-sina-free.workers.dev/news"
+
+res = requests.get(API, timeout=10)
+data = res.json()
+
+news = data["data"][0]
+
+text = f"""
+⚽ {news['title']}
+
+📰 {news['subtitle']}
+"""
+
+print(text)
+```
+
+---
+
+# ⚙️ Features
+
+✅ No API Key required
+
+✅ Fast and lightweight
+
+✅ Latest football news
+
+✅ Clean and normalized JSON
+
+✅ Ready for production use
+
+✅ RESTful structure
+
+✅ Hosted on Cloudflare Workers
+
+
+---
+
+# 🎯 Use Cases
+
+● Football news bots
+
+● Sports websites
+
+● Mobile sports apps
+
+● Live news dashboards
+
+● Monitoring and aggregation tools
+
+● Student and professional projects
+
+
+---
+
+# 👤 Developer
+
+### Mir Sina Banihashem
+
+📍 Hosted on: Cloudflare Workers
+🗳 Rubika: https://rubika.ir/Sinabani_api
+🔗 API Endpoint: https://football.api-sina-free.workers.dev/news
